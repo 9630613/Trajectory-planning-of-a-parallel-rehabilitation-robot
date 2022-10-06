@@ -44,13 +44,17 @@ As it mentioned, the ankle is like a spherical joint, so it has 3-DOFs. Therefor
 
 - The coordinate system of the UPS branch is shown where, $O_{1,i} − X_{o_{1,i}}Y_{o_{1,i}}Z_{o_{1,i}}$ is the coordinate system whose origin is at the center of the universal joint with its axis $X_{o_{1,i}}$ coinciding with the first axis of the universal joint and the axis $Y_{o_{1,i}}$ coincides with second axis of the universal joint when the robot is in the initial position, $Z_{o_{1,i}} = X_{o_{1,i}} \times Y_{o_{1,i}}$ .
 
-- $O_{2,i} − X_{o_{2,i}}Y_{o_{2,i}}Z_{o_{2,i}}$ is the coordinate system whose origin $O_{2,i}$ is at the center of the universal joint with its axis Y_{o_{2,i}} coinciding with the second axis of the universal joint, and $Z_{o_{2,i}}$ coincides with the axis of jack, while the axis $X_{o_{1,i}} = Y_{o_{1,i}} \times Z_{o_{1,i}}$ .
+- $O_{2,i} − X_{o_{2,i}}Y_{o_{2,i}}Z_{o_{2,i}}$ is the coordinate system whose origin $O_{2,i}$ is at the center of the universal joint with its axis Y_{o_{2,i}} coinciding with the second axis of the universal joint, and $Z_{o_{2,i}}$ coincides with the symmetry axis of each branch, while the axis $X_{o_{1,i}} = Y_{o_{1,i}} \times Z_{o_{1,i}}$ .
 
 - $O_{3,i} − X_{o_{3,i}}Y_{o_{3,i}}Z_{o_{3,i}}$ is the coordinate system whose origin $O_{3,i}$ is at the center of the spherical joint with its three axes parallel to the corresponding axes of $O_{2,i} − X_{o_{2,i}}Y_{o_{2,i}}Z_{o_{2,i}}$.
 ## Inverse solution of positions
+The inverse solution of positions is to deduce the inputs of three branches based on the output angles of the moving platform around the fixed coordinate system, with the three angles represented as α, β and γ respectively, where α represents the angle of DO/PL, β
+represents the angle of IN/EV, while γ denotes the angle of AB/AD.The rotating matrix ROM of the moving platform relative to the fixed base can be expressed as 
+$$R_{O_0O_4} = R (γ) R (α) R (β)$$
 
+<img src="https://github.com/9630613/Trajectory-planning-of-a-parallel-rehabilitation-robot/blob/main/Images/3.png" width= "300">
 
-
+This picture shows the axis asigning in one UPS branches that $a_i$ and $C_i$ are the centres of universal and spherical joints.
 
 # Velocity Jacobian Matrix
 # Simulation Of The Robot In MATLAB SIMULINK MULTIBODY
