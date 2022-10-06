@@ -28,13 +28,15 @@ In order to prevent harming the ankle, the rotation center of robot should coinc
 
 # Mechanical Design Of The Robot
 The mechanical structure of 2-UPS/RRR parallel ankle rehabilitation robot is as in Figure, where, U, P, S and R stand for universal,
-prismatic, spherical and revolute joint, respectively. P and the Z axsis R represent the actuated joint. The mechanism consists of one
+prismatic, spherical and revolute joint, respectively. P and $R_1$ represent the actuated joint. The mechanism consists of one
 fixed base, one moving platform, two UPS branched chains and one series RRR constrained branch, and it has 3-DOFs with its three rotation axes orthogonal to one point.
 
 <img src="https://github.com/9630613/Trajectory-planning-of-a-parallel-rehabilitation-robot/blob/main/Images/robot1%20(2).png" width= "300"> 
 
-As it mentioned, the ankle is like a spherical joint, so has 3-DOFs. Therefore, the task space has rotational 3-DOFs, and robot could provides all the movements of the ankle. 
+As it mentioned, the ankle is like a spherical joint, so it has 3-DOFs. Therefore, the task space has 3-DOFs of rotational movements, and robot could provides all the movements of the ankle. 
 # Kinematic Analysis
+
+
 # Velocity Jacobian Matrix
 # Simulation Of The Robot In MATLAB SIMULINK MULTIBODY
 # Results
